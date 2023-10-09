@@ -1,0 +1,71 @@
+/* RESETS */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 0;
+}
+
+body { 
+    height:100%
+}
+
+a {
+    text-decoration: none;
+} 
+
+ul {
+    padding: 0%;
+}
+
+i {
+    color: #990011;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* NAVEGATION MENU */
+
+.nav_menu {
+    background-color: #FCF6F5;
+}
+
+.nav_menu a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* MAIN SECTION */ 
+
+main {
+    background-color: #FCF6F5;
+    padding: 5vw;
+    height: 80vh;
+}
+
+h1 {
+    color: #323232;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+    color: #990011;
+}
+
+.button_main {
+    color: #FCF6F5;
+    background-color: #990011;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5vh;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #FCF6F5;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
