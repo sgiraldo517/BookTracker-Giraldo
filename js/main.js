@@ -82,7 +82,7 @@ const visualizar_libros = (librosTrackeados) => {
                 let mensaje = `
                 Nombre: ${libro.nombre}
                 Autor: ${libro.autor}
-                Progreso: ${libro.progreso}
+                Progreso: ${libro.progreso}%
                 `
                 mensaje_final += mensaje
             });
