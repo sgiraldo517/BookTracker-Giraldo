@@ -8,7 +8,7 @@
 }
 
 body { 
-    height:100%
+    height: 100dvh;
 }
 
 a {
@@ -27,28 +27,61 @@ i {
 /* NAVEGATION MENU */
 
 .nav_menu {
-    background-color: #FCF6F5;
+    width: 100dvw;
 }
 
 .nav_menu a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* MAIN SECTION */ 
 
-main {
-    background-color: #FCF6F5;
-    padding: 5vw;
-    height: 80vh;
+.page-content {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.video-index {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter:opacity(70%);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    text-align: center;
+    display: flex;
+    margin:0
+}
+
+.page-content {
+    position: relative;
 }
 
 h1 {
     color: #323232;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
 }
 
 h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
 }
 
 span {
@@ -58,14 +91,81 @@ span {
 .button_main {
     color: #FCF6F5;
     background-color: #990011;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 5vh;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 5dvh;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #FCF6F5;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+    font-family: 'Rubik', sans-serif;
 }
+
+/* PAGINA MAIN */
+
+.pagina-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    filter:opacity(70%);
+}
+
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 8dvh;
+    padding-bottom: 8dvh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5dvh;
+    padding-bottom: 5dvh;
+}
+
+form .input-main{
+    width: 60dvw;
+}
+
+form .input-main-label {
+    font-family: 'Rubik', sans-serif;
+}
+
+.contenedor-cards {
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+}
+
+.cards-tracker {
+    font-family: 'Rubik', sans-serif;
+}
+
+.cards-tracker span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cards-tracker p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
