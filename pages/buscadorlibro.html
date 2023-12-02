@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c20f16dd22.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+    <title>Book finder</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- Navegation Menu -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand nav_menu_text" href="../index.html">
+                <i class="fa-solid fa-book-bookmark fa-xl"></i>
+                Book Tracker
+                </a>
+                <ul class="nav nav-underline" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tracker.html">Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Book Finder</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section: Book Finder -->
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">Buscar libro con nuestro Book Finder</h1>
+            <p class="lead">
+                Usa el identificador unico del libro (ISBN) para encontrar automaticamente su información. 
+            </p>
+            <div class="p-1 .bg-light rounded rounded-pill shadow-lg mb-4">
+                    <div class="input-group">
+                    <input type="search" placeholder="Ingresa el codigo ISBN" aria-describedby="button-addon1" class="form-control border-0 bg-light" id="isbn">
+                    <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-light rounded-pill"><i class="fa fa-search" id="identificar-isbn"></i></button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Division -->
+    <div class="b-example-divider"></div>
+
+    <!-- Seccion dos: Ingreso Manual -->
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">Ingresa aqui la información del libro</h1>
+            <p class="lead">
+                Si no encontraste el libro con nuestro book finder puedes agregar manualmente la información aqui.
+            </p>
+            <!-- Form -->
+            <form id="ingresarNuevoLibro">
+                <div class="form-floating mb-3">
+                    <input type="text" id="libro" class="form-control input-main" placeholder="Nombre del Libro">
+                    <label for="libro" class="input-main-label">Nombre del Libro</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" id="autor" class="form-control input-main"  placeholder="Autor">
+                    <label for="autor" class="input-main-label">Autor</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" id="totalpaginas" class="form-control input-main"  placeholder="Total paginas">
+                    <label for="totalpaginas" class="input-main-label">Total paginas</label>
+                </div>
+                <button type="submit" class="btn btn-light button_main" id="nuevo-libro-manual">Agregar Libro</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <i class="fa-solid fa-book-bookmark fa-xl"></i>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Book Tracker, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-youtube fa-xl"></i></svg></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/book_finder.js"></script>
+
+</html>

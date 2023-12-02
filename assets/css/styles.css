@@ -5,10 +5,16 @@
     box-sizing: border-box;
     list-style: none;
     font-weight: 0;
+    padding: 0;
 }
 
 body { 
     height: 100dvh;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 a {
@@ -26,12 +32,17 @@ i {
 
 /* NAVEGATION MENU */
 
+.navbar a {
+    color: #323232;
+}
+
 .nav_menu {
     width: 100dvw;
 }
 
 .nav_menu a {
     font-family: 'Rubik', sans-serif;
+    color: #323232;
 }
 
 /* MAIN SECTION */ 
@@ -67,11 +78,14 @@ i {
     position: relative;
 }
 
-h1 {
+.titulo-index {
     color: #323232;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
     font-size: 5em;
+}
+span {
+    text-wrap: wrap;
 }
 
 h2 {
@@ -91,7 +105,6 @@ span {
 .button_main {
     color: #FCF6F5;
     background-color: #990011;
-    font-family: 'Rubik', sans-serif;
     margin-top: 5dvh;
 }
 
@@ -129,7 +142,11 @@ footer {
     position: relative;
     text-align: center;
     padding-top: 8dvh;
-    padding-bottom: 8dvh;
+    padding-bottom: 4dvh;
+}
+
+.video-container .boton-book-finder {
+    padding-bottom: 4dvh;
 }
 
 form {
@@ -137,16 +154,10 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5dvh;
-    padding-bottom: 5dvh;
 }
 
 form .input-main{
     width: 60dvw;
-}
-
-form .input-main-label {
-    font-family: 'Rubik', sans-serif;
 }
 
 .contenedor-cards {
@@ -168,4 +179,14 @@ form .input-main-label {
     margin: 0;
 }
 
+/* Pagina 2: Tracker */
+.titulo-tracker {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulo-tracker span {
+    color: #323232;
+}
 

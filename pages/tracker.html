@@ -20,40 +20,34 @@
     <!--header -->
         <header>
             <!-- Navegation Menu -->
-            <nav class="navbar nav_menu">
+            <nav class="navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand nav_menu_text" href="../index.html">
                     <i class="fa-solid fa-book-bookmark fa-xl"></i>
                     Book Tracker
                     </a>
+                    <ul class="nav nav-underline" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Tracker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buscadorlibro.html">Book Finder</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
         <div class="caption">
-            <h1>Libros <span>trackeados</span></h1>
+            <h1 class="titulo-tracker">Libros <span>trackeados</span></h1>
         </div>
-    
-    <!-- Form -->
-        <section>
-            <form id="ingresarNuevoLibro">
-                <h3>Ingresa aqui la información del libro</h3>
-                <div class="form-floating mb-3">
-                    <input type="text" id="libro" class="form-control input-main" placeholder="Nombre del Libro">
-                    <label for="libro" class="input-main-label">Nombre del Libro</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" id="autor" class="form-control input-main"  placeholder="Autor">
-                    <label for="autor" class="input-main-label">Autor</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" id="totalpaginas" class="form-control input-main"  placeholder="Total paginas">
-                    <label for="totalpaginas" class="input-main-label">Total paginas</label>
-                </div>
-                <button type="submit" class="btn btn-light button_main" id="nuevo-libro">Agregar Libro</button>
-            </form>
-        </section>
-    </div>  
-    
+        <div class="d-grid gap-2 col-6 mx-auto boton-book-finder">
+            <button class="btn btn-danger rounded rounded-pill shadow-lg" type="button" id="ir-a-book-finder">Agrega un libro</button>
+        </div>
+    </div>
+
     <!-- Cards-->
         <section>
             <div class="container contenedor-cards">
@@ -71,18 +65,7 @@
                     <div>
                         Agrega el numero de paginas que has leido de este libro.
                     </div>
-                    <div>
-                        <div class="form-floating mb-3">
-                            <input type="number" id="totalpaginasleidas" class="form-control input-main"  placeholder="Total paginas">
-                            <label for="totalpaginasleidas" class="input-main-label">Paginas leidas</label>
-                        </div>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Estado</option>
-                            <option value="1">Recien agregado</option>
-                            <option value="2">En progreso</option>
-                            <option value="3">Terminado</option>
-                        </select>
-                        <button type="submit" class="btn btn-light button_main" id="nuevo-progreso">Aceptar</button>
+                    <div id="offcanvas_bodycontent">
                     </div>
                 </div>
             </div>
@@ -102,6 +85,7 @@
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-youtube fa-xl"></i></svg></a></li>
             </ul>
         </footer>
+    </div>
 </body>
 
 <!-- JS -->
